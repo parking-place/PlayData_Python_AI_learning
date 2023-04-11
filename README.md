@@ -2,6 +2,6 @@
  플레이 데이터 파이썬 학습
  <br>23.03.27~
 
-[Learning](./02.program/Python/README.md)
+[Learning](./02.program/Python/)
 
-[CodingTeat](./03.codingtest/README.md)
+[CodingTeat](./03.codingtest/)
