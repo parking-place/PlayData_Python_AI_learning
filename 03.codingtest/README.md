@@ -3,7 +3,7 @@
 
   ## [Coding_Test repository](https://github.com/parking-place/Coding_Test)
 
-- 프로그래머스/백줜 연동한 리포지터리입니다.
+- 프로그래머스/백준 연동한 리포지터리입니다.
 
 
 --------------------------------------------------
