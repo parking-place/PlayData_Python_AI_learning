@@ -8,7 +8,7 @@
 
  아래 링크를 누르시면 이동합니다.
 -
-[Learning](./02.program/Python/)
+[Learning <-](./02.program/Python/)
 -
-[CodingTeat](./03.codingtest/)
+[CodingTeat <-](./03.codingtest/)
 -
