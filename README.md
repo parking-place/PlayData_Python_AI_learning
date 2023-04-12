@@ -10,9 +10,7 @@
 -
 [Learning <-](./02.program/Python/)
 -
-[CodingTeat(구) <-](./03.codingtest/)
--
-[CodingTeat(연동) <-](https://github.com/parking-place/Coding_Test/)
+[CodingTeat <-](https://github.com/parking-place/Coding_Test/)
 -
 [Study <-](https://github.com/parking-place/Coding_Test/Codingtest_Note/Study/)
 -
