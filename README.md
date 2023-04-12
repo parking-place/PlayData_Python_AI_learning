@@ -13,5 +13,5 @@
 -
 코딩테스트 관련 자료 - [CodingTeat](https://github.com/parking-place/Coding_Test/)
 -
-스터디 관련 자료 - [Study](https://github.com/parking-place/Coding_Test/Codingtest_Note/Study/)
+스터디 관련 자료 - [Study](https://github.com/parking-place/Coding_Test/tree/main/Codingtest_Note/Study)
 -
