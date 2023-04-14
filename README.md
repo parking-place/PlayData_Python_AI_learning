@@ -1,17 +1,21 @@
 # PlayData_Python_AI_learning
-플레이 데이터 파이썬 학습
+</br>
+ (03.27 ~ )
+ 플레이 데이터 파이썬 학습
 -
-
-23.03.27~
  
-<br><br>
+</br></br>
 
-## 아래 링크를 누르시면 이동합니다.
-<br>
+## 목차
 
-학습 자료/ 코드 모음 - [Learning](./02.learning/)
+[Learning](./02.learning/)
 -
-코딩테스트 관련 자료 - [CodingTeat](https://github.com/parking-place/Coding_Test/)
+    학습 자료/ 코드 모음
+
+[CodingTeat](https://github.com/parking-place/Coding_Test/)
 -
-스터디 관련 자료 - [Study](https://github.com/parking-place/Coding_Test/tree/main/Codingtest_Note/Study)
+    코딩테스트 관련 자료
+
+[Study](https://github.com/parking-place/Coding_Test/tree/main/Codingtest_Note/Study)
 -
+    스터디 관련 자료
