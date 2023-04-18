@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup as bs
 from pprint import pprint
 import pandas as pd
 from datetime import datetime
-
+import os
+import re
 
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
 headers = { 'User-Agent' : user_agent }
@@ -72,3 +73,10 @@ d = datetime.now().strftime('%Y-%m-%d') # strftime : 문자열로 변환
 file_path = r'news_and_contents_{}.csv'.format(d)
 result = get_news_list()
 result.to_csv(file_path, index=False)
+
+file_path = r'.\news\{d}'
+os.makedirs(file_path, exist_ok=True)
+for title, news in zip(result['title'], result['content']):
+    title = re.sub(r'[\W]', '', title)
+    with open(file_path + r'\{title}.txt', 'wt', encoding='utf-8') as f:
+        f.write(news)
