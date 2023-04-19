@@ -19,3 +19,7 @@
 [Study](https://github.com/parking-place/Coding_Test/tree/main/Codingtest_Note/Study)
 -
     스터디 관련 자료
+
+[자료구조 및 기출문제](https://github.com/parking-place/Coding_Test/tree/main/Codingtest_Note/Export_problem/)
+-
+    자료구조 및 코딩테스트 기출문제 36문제입니다.
