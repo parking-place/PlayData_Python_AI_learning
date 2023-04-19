@@ -1,0 +1,78 @@
+{
+    "hi": {
+        "0": "hello"
+    },
+    "apple": {
+        "0": "a hard round fruit that is white inside and has a smooth red, yellow, or green skin, which is called a peel when it has been removed. The middle part of the apple containing the seeds is called the core. Apples grow on apple trees."
+    },
+    "banana": {
+        "0": "a long curved fruit with a yellow skin"
+    },
+    "call": {
+        "0": "to ask or tell someone to come to a place, usually so that you can talk to them",
+        "1": "to speak loudly, or to shout to someone who is not near you",
+        "2": "to telephone someone",
+        "3": "to describe or refer to someone or something in a particular way",
+        "4": "to use a particular name or title for someone",
+        "5": "to say loudly the names or numbers on a list",
+        "6": "to announce that an event such as a meeting or election is going to happen",
+        "7": "if an animal calls, it makes the sound it usually makes",
+        "8": "to say what you think will happen, for example in politics or business",
+        "9": "to ask for a time out  (=a short period when play stops) during a sports game",
+        "10": "to say which of the four suits of cards will be trump  (=cards with a higher value) in a card game",
+        "11": "to tell dancers which movements to make, especially for a square dance or ceilidh",
+        "12": "to describe on television or radio what is happening in a race or game",
+        "13": "if a train, bus, or ship calls somewhere, it stops there during its trip"
+    },
+    "feel": {
+        "0": "to be in a particular state as a result of an emotion or a physical feeling",
+        "1": "to have a particular way of thinking about something, especially one that depends on your emotions rather than on facts or evidence",
+        "2": "to touch something with your hand so that you can discover what it is like",
+        "3": "to notice something that is touching you or something that is happening to your body",
+        "4": "to be affected by something",
+        "5": "if something feels nice, good, strange, etc., it gives you this feeling",
+        "6": "to try to find something with your hands, especially because you cannot see clearly"
+    },
+    "hello": {
+        "0": "used as a greeting when you meet someone or begin to talk to someone on the telephone",
+        "1": "used for saying that you think someone is not being very sensible or is not paying attention to what is happening",
+        "2": "used for expressing surprise or interest"
+    },
+    "bye": {
+        "0": "goodbye"
+    },
+    "like": {
+        "0": "used for introducing an example of something or someone that you have just mentioned",
+        "1": "used for saying that a type of behavior is typical of a particular person",
+        "2": "used when saying that something appears to be true but may not be",
+        "3": "used when you pause while you are thinking what to say next, or because of a habit in the way that you speak",
+        "4": "used for drawing someone’s attention to what you are going to say, either because it is new information or because it is important",
+        "5": "used when asking someone to do something that they might not want to do",
+        "6": "used when you are reporting what someone has said or thought",
+        "7": "used for showing that the information you are giving is not exact or that you are describing something in a way that makes it seem better, worse, larger, etc. than it really is"
+    },
+    "love": {
+        "0": "to like or enjoy something very much",
+        "1": "to be very strongly attracted to someone in an emotional and sexual way",
+        "2": "to care very much about someone, especially members of your family or close friends"
+    },
+    "environmental": {
+        "0": "relating to the natural world and the effect that human activity has on it"
+    },
+    "buzz": {
+        "0": "when an insect such as a fly or bee buzzes, it makes a rough continuous sound",
+        "1": "if a place or group of people is buzzing, there is a lot of noise or activity",
+        "2": "to fly an airplane low over people or buildings",
+        "3": "to move around quickly and busily"
+    },
+    "ambition": {
+        "0": "something that you very much want to do, usually something that is difficult to achieve",
+        "1": "the feeling that you want very much to become successful, rich, famous, etc."
+    },
+    "determine": {
+        "0": "to officially decide something",
+        "1": "to control what something will be",
+        "2": "to calculate something, or to discover it by examining evidence",
+        "3": "to decide that you really want to do something"
+    }
+}
