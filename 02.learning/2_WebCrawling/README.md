@@ -1,6 +1,6 @@
 # Web Crawling
 </br>
- (04.14 ~ )
+ (04.14 ~ 04.21)
 
  웹 크롤링 강의 학습자료와 코드를 모아두고 있습니다.
 -
@@ -21,7 +21,8 @@
     비동기적 프로그래밍 - 코루틴, 이벤트 루프, 관련 패키지
 [04 Selenium](./04_Selenium.ipynb)
 -
-    설명
+    리퀘스트를 이용할 수 없는 경우에 사용하는 패키지
+    브라우저를 직접 컨트롤
 [io test files](./testfiles/)
 -
     1. html/xml 및, BeautifulSoap, lxml 모듈등, io 입출력 하는데 사용한 기타 파일들
