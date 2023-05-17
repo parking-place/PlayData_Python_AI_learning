@@ -9,6 +9,7 @@ from sklearn.metrics import (confusion_matrix,
                              f1_score)
 import numpy as np
 import seaborn as sns
+from sklearn.metrics import roc_auc_score, roc_curve, precision_recall_curve, average_precision_score
 
 def plot_confusion_matrix(y, pred, title=None):
     """
@@ -25,9 +26,9 @@ def plot_confusion_matrix(y, pred, title=None):
         plt.title(title)
     plt.show()
     
-def print_metrics_classification(y, pred, title=None):  
+def print_metrics_classification(y, pred, title=None, pos_proba=None):  
     """
-    분류 평갖치표 점수들을 출력하는 함수.
+    분류 평가지표 점수들을 출력하는 함수.
     accuracy, recall, precision, f1 score 를 출력
     [parameter]
         y:ndarray - 정답
@@ -40,6 +41,31 @@ def print_metrics_classification(y, pred, title=None):
     print(f"재현율(Recall) : {recall_score(y, pred)}")
     print(f"정밀도(Precision): {precision_score(y, pred)}")
     print(f"F1 Score: {f1_score(y, pred)}")
+    if pos_proba is not None:
+        print(f'Averaged Precision: {average_precision_score(y, pos_proba)}')
+        print(f"ROC-AUC Score: {roc_auc_score(y, pos_proba)}")
+
+# PR Curve 시각화 함수
+def plot_pr_curve(y, pos_proba, title=None, figsize=(6, 6)):
+    from sklearn.metrics import precision_recall_curve, average_precision_score, PrecisionRecallDisplay
+    precisions, recalls, thresholds = precision_recall_curve(y, pos_proba)
+    ap = average_precision_score(y, pos_proba)
+    disp = PrecisionRecallDisplay(precision=precisions, recall=recalls, average_precision=ap, estimator_name=title)
+    fig, ax = plt.subplots(figsize=figsize)
+    disp.plot(ax=ax)
+    plt.title(f'AP Score: {ap:.2%}')
+    plt.show()
+    
+# roc curve 시각화 함수
+def plot_roc_curve(y, pos_proba, title=None, figsize=(6, 6)):
+    from sklearn.metrics import roc_curve, roc_auc_score, RocCurveDisplay
+    fpr, tpr, _ = roc_curve(y, pos_proba)
+    auc = roc_auc_score(y, pos_proba)
+    disp = RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=auc, estimator_name=title)
+    fig, ax = plt.subplots(figsize=figsize)
+    disp.plot(ax=ax)
+    plt.title(f'AUC Score: {auc:.2%}')
+    plt.show()
 
 def cm_viz(y_true, y_pred, cmap = 'Reds', color = 'r', figsize=(8, 8), title=None):
     """Confusion Matrix 시각화, 정확도, 정밀도, 재현율, F1-score를 한번에 출력
@@ -111,6 +137,43 @@ def cm_viz(y_true, y_pred, cmap = 'Reds', color = 'r', figsize=(8, 8), title=Non
     
     plt.show()
 
+# disp 비교함수
+def compare_disp(disp1, disp2, figsize=(6, 6), title=None):
+    import matplotlib.pyplot as plt
+    fig, ax = plt.subplots(figsize=figsize)
+    disp1.plot(ax=ax)
+    disp2.plot(ax=ax)
+    if title:
+        plt.title(title)
+    plt.show()
+    
+# roc curve 비교
+def compare_roc(y, pos_proba1, pos_proba2, title1=None, title2=None, figsize=(6, 6)):
+    from sklearn.metrics import roc_curve, roc_auc_score, RocCurveDisplay
+    
+    fpr1, tpr1, _ = roc_curve(y, pos_proba1)
+    auc1 = roc_auc_score(y, pos_proba1)
+    disp1 = RocCurveDisplay(fpr=fpr1, tpr=tpr1, roc_auc=auc1, estimator_name=title1)
+    
+    fpr2, tpr2, _ = roc_curve(y, pos_proba2)
+    auc2 = roc_auc_score(y, pos_proba2)
+    disp2 = RocCurveDisplay(fpr=fpr2, tpr=tpr2, roc_auc=auc2, estimator_name=title2)
+    
+    compare_disp(disp1, disp2, figsize=figsize, title='ROC Curve')
+
+# pr curve 비교
+def compare_pr(y, pos_proba1, pos_proba2, title1=None, title2=None, figsize=(6, 6)):
+    from sklearn.metrics import precision_recall_curve, average_precision_score, PrecisionRecallDisplay
+    
+    prec1, rec1, _ = precision_recall_curve(y, pos_proba1)
+    ap1 = average_precision_score(y, pos_proba1)
+    disp1 = PrecisionRecallDisplay(precision=prec1, recall=rec1, average_precision=ap1, estimator_name=title1)
+    
+    prec2, rec2, _ = precision_recall_curve(y, pos_proba2)
+    ap2 = average_precision_score(y, pos_proba2)
+    disp2 = PrecisionRecallDisplay(precision=prec2, recall=rec2, average_precision=ap2, estimator_name=title2)
+    
+    compare_disp(disp1, disp2, figsize=figsize, title='PR Curve')
 
 #================================================================
 # from sklearn.tree import DecisionTreeClassifier
