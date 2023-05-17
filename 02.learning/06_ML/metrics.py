@@ -84,7 +84,7 @@ def cm_viz(y_true, y_pred, cmap = 'Reds', color = 'r', figsize=(8, 8), title=Non
     prec = precision_score(y_true, y_pred)
     acc_prec_ax.bar(['Accuracy', 'Precision'], [acc*100, prec*100], color=color)
     acc_prec_ax.set_ylim(0, 100)
-    acc_prec_ax.set_title('Accuracy & Precision')
+    # acc_prec_ax.set_title('Accuracy & Precision')
     acc_prec_ax.set_ylabel('Score')
     # precision accuracy 퍼센트로 표시
     acc_prec_ax.text(0, acc*100, f'{acc*100:.2f}%', ha='center', va='bottom')
@@ -95,7 +95,7 @@ def cm_viz(y_true, y_pred, cmap = 'Reds', color = 'r', figsize=(8, 8), title=Non
     spec = cm[0, 0] / (cm[0, 0] + cm[0, 1])
     recall_ax.barh(['Recall', 'Specificity'], [rc*100, spec*100], color=color)
     recall_ax.set_xlim(0, 100)
-    recall_ax.set_title('Specificity & Recall')
+    # recall_ax.set_title('Specificity & Recall')
     # recall 퍼센트로 표시
     recall_ax.text(rc*100, 0, f'{rc*100:.2f}%', ha='left', va='center')
     recall_ax.text(spec*100, 1, f'{spec*100:.2f}%', ha='left', va='center')
