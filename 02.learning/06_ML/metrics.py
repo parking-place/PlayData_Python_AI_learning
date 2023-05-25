@@ -10,6 +10,7 @@ from sklearn.metrics import (confusion_matrix,
 import numpy as np
 import seaborn as sns
 from sklearn.metrics import roc_auc_score, roc_curve, precision_recall_curve, average_precision_score
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 def plot_confusion_matrix(y, pred, title=None):
     """
@@ -44,6 +45,22 @@ def print_metrics_classification(y, pred, title=None, pos_proba=None):
     if pos_proba is not None:
         print(f'Averaged Precision: {average_precision_score(y, pos_proba)}')
         print(f"ROC-AUC Score: {roc_auc_score(y, pos_proba)}")
+        
+def print_metrics_regression(y, pred, title=None):
+    """
+    회귀 평가지표 점수들을 출력하는 함수.
+    MAE, MSE, RMSE, R2 를 출력
+    [parameter]
+        y:ndarray - 정답
+        pred:ndarray - 모델 추정값
+        title:str - 제목
+    """
+    if title:
+        print(f"=========={title}==========")
+    print(f"MAE: {mean_absolute_error(y, pred)}")
+    print(f"MSE: {mean_squared_error(y, pred)}")
+    print(f"RMSE: {mean_squared_error(y, pred, squared=False)}")
+    print(f"R2 Score: {r2_score(y, pred)}")
 
 # PR Curve 시각화 함수
 def plot_pr_curve(y, pos_proba, title=None, figsize=(6, 6)):
