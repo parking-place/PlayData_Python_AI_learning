@@ -37,4 +37,8 @@
 -
     OpenCV 학습 자료와 내용입니다.
 
+[DeepLearning](https://github.com/parking-place/ml_colab_project)
+-
+    Deep Learning에 대한 학습자료와 내용입니다.
+
 <br>[<상위폴더로 이동하기](../)
