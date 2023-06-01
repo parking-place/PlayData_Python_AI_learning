@@ -33,11 +33,11 @@
 -
     머신 러닝 학습 자료와 내용입니다.
 
-[OpenCV](./7_OpenCV/) <b>진행중</b>
+[OpenCV](./7_OpenCV/) <b>완료</b>
 -
     OpenCV 학습 자료와 내용입니다.
 
-[DeepLearning](https://github.com/parking-place/ml_colab_project)
+[DeepLearning](https://github.com/parking-place/ml_colab_project/DL_learning) <b>진행중</b>
 -
     Deep Learning에 대한 학습자료와 내용입니다.
 
