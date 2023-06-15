@@ -41,4 +41,8 @@
 -
     Deep Learning에 대한 학습자료와 내용입니다.
 
+[ObjectDetection]()
+-
+    Object Detection에 대한 학습자료와 내용입니다.
+
 <br>[<상위폴더로 이동하기](../)
