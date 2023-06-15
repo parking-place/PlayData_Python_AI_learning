@@ -41,7 +41,7 @@
 -
     Deep Learning에 대한 학습자료와 내용입니다.
 
-[ObjectDetection]()
+[ObjectDetection](https://github.com/parking-place/ml_colab_project/blob/main/Object_Detection)
 -
     Object Detection에 대한 학습자료와 내용입니다.
 
